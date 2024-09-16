@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #87cefa); /* Gradient blue background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Form Heading */
+h1 {
+    color: #007acc;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fieldset Styles */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #007acc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #007acc;
+    padding: 0 10px;
+}
+
+/* Input Group Styles */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* Placeholder and Input Focus */
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    border-color: #005f99;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 95, 153, 0.5);
+}
+
+/* Submit Button */
+.submit-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #005f99;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
